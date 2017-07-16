@@ -7,7 +7,7 @@ class User < ApplicationRecord
   #Virtual attribute
   attr_accessor :login
 
-  validates_format_of :nickname, with: /^[a-zA-Z0-9_\.]*$/, :multiline => true
+  validates_format_of :nickname, with: /^[a-zA-Z0-9_-\.]*$/, :multiline => true
 
   def self.find_for_database_authentication(warden_conditions)
       conditions = warden_conditions.dup
