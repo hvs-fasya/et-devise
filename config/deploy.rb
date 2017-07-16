@@ -21,7 +21,7 @@ set :deploy_to, "/home/deployer/apps/et-devise"
 # set :pty, true
 
 # Default value for :linked_files is []
-append :linked_files, "config/database.yml", "config/smtp.yml"
+append :linked_files, "config/database.yml", "config/smtp.yml", "config/cable.yml", "config/secrets.yml"
 
 # Default value for linked_dirs is []
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
