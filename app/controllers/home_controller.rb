@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
 
 	def index
-		render inline: "<p>Hallo Devise</p>"
+		render 'index'
 	end
 end
