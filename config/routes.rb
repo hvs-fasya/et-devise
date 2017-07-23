@@ -6,4 +6,8 @@ Rails.application.routes.draw do
   
   root to: "home#index"
 
+  get '/users', to: "users#index"
+  get '/users/:id/lock', to: "users#lock"
+  get '/users/:id/unlock', to: "users#unlock"
+
 end
